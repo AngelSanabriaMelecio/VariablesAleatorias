@@ -8,6 +8,8 @@ export function useApp(){
 
 export function AppProvider({ children }) {
 
+    const [page,setPage] = useState()
+
     const [random, setRandom] = useState([])
     const [probs,setProbs] = useState([])
 
@@ -18,6 +20,7 @@ export function AppProvider({ children }) {
                 setRandom,
 
                 probs,setProbs,
+                page,setPage,
             }}>
             {children}
         </AppContext.Provider>
