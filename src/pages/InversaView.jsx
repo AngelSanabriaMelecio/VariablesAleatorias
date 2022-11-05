@@ -8,6 +8,7 @@ import { useApp } from "../Context/AppContext";
 export const InversaView = () => {
     
     const { random, setRandom, probs, setProbs } = useApp()
+    
     const [inputs, setInputs] = useState([])
     const lastRef = useRef()
 
